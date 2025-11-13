@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>Laptop Product Card</title>
+
+  <style>
+    /* Page background color set to grey */
+    body {
+      background-color: grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Product card design */
+    .product-card {
+      background-color: white;
+      border: 3px solid red;
+      border-radius: 10px;
+      width: 280px;
+      height: 400px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Image styling */
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Title */
+    .product-title {
+      font-size: 1.2rem;
+      margin: 15px 0 5px;
+    }
+
+    /* Price */
+    .product-price {
+      font-size: 1.1rem;
+      color: green;
+      margin-bottom: 15px;
+    }
+
+    /* Add to Cart button */
+    .add-to-cart {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .add-to-cart:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-card">
+  <img src=" https://www.livemint.com/lm-img/img/2025/02/21/960x540/best_laptop_under_Rs_30000_1740122015828_1740122045813.jpg"alt="Samsung Galaxy S25 Ultra" class="product-image">
+  <h2 class="product-title">Samsung Galaxy S25 Ultra</h2>
+  <p class="product-price">₹89,999</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+</body>
+</html>
