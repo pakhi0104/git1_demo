@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form method="post" action="submit.html">
+
+<table border="1" cellpadding="8" align="center">
+
+<tr>
+    <td>Full Name</td>
+    <td>
+        <input type="text" placeholder="Enter your name" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Roll Number</td>
+    <td>
+        <input type="text" placeholder="Enter roll number" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Email ID</td>
+    <td>
+        <input type="email" placeholder="Enter email address" required>
+    </td>
+</tr>
+
+<tr>
+    <td>Department</td>
+    <td>
+        <select required>
+            <option value="">-- Select --</option>
+            <option>ECE</option>
+            <option>CSE</option>
+            <option>ME</option>
+            <option>CE</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>Gender</td>
+    <td>
+        <input type="radio" name="g"> Male
+        <input type="radio" name="g"> Female
+    </td>
+</tr>
+
+<tr>
+    <td>Address</td>
+    <td>
+        <textarea placeholder="Enter address"></textarea>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2" align="center">
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
