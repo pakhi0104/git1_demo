@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #f1f3f6;  
+    margin: 20px;
+}
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0 1.5rem;
+
+    background: linear-gradient(90deg, #1e40af, #2563eb, #1e40af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 0.08rem;
+    text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+   background-color: #2874f0;
+    align-items: center;   
+    padding: 1rem 2rem;
+    gap: 20px;
+}
+
+.logo {
+    color: white;              
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffe500;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f1f3f6;  
+    padding: 2rem;
+    gap:1.5rem ;
+}
+
+.product-card {
+    background-color: #ffffff;
+    width: 14.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.15) ;
+    transition: transform 0.3s;
+     box-shadow: 0.3s;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+.product-card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+.product-card img{
+    height: 9.375rem;
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.product-card h3 {
+    color: #222;
+    font-size: 1.125rem;
+    margin:0.25rem 0;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 0.875rem;
+    margin: 0.25rem ;
+}
+
+.price {
+    color: #388e3c;              
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.button{
+    margin-top: 10px;
+     background-color: #2874f0;
+    color: white;
+    border: none;
+    padding: 8px,16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0.7rem 0;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
