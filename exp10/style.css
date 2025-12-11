@@ -55,6 +55,12 @@ h1 {
 .nav-links a:hover {
     color: #ffe500;
 }
+.actions a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 .products {
     display: flex;
     flex-wrap: wrap;
