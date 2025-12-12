@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Flex exp</title>
+    <style>
+    body{
+    font-family: sans-serif;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid blue;
+    padding: 20px;
+    flex-wrap: wrap ;
+    background-color: #f0f6ff ;
+}
+.card{
+  width: 220px;
+  background-color: white;
+  border: 2px solid  rgb(29, 3, 78);
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 2px 2px 8px gray;
+}
+h2{
+    color: #1b0261;
+    text-align: center;
+}
+.card h3{
+    color: #1a365d;
+    text-align: center;
+}
+.card p{
+    color: #4a5568;
+}
+.card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.c{
+    width: 60px;
+    height: 60px;
+    background-color: #056cda;
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    line-height: 60px;
+    font-weight: bold;
+}
+    </style>
+    </head>
+    <body>
+    <h2>Experiment-8</h2>
+    <h2>Student card</h2>
+    <div class="container">
+        <div class="card">
+            <div class="c">PD</div>
+            <h3>Pakhi Dubey</h3>
+        <p>Branch-ECE</p>
+        <p>Roll no-2025B03110104</p>
+        <p>1st Year</p>
+    </div>
+    <div class="card">
+        <div class="c">MP</div>
+        <h3>Mahima Patel</h3>
+        <p>Branch - ECE</p>
+        <p>Roll no- 2025B03110148</p>
+        <p>1st Year</p>
+    </div>
+    <div class="card">
+        <div class="c">HS</div>
+        <h3>Harshita Singh</h3>
+        <p>Branch - ECE</p>
+        <p> Roll no- 2025B03110060</p>
+        <p>1st Year</p>
+    </div>
+    </div>
+    </body>
+</html> 
