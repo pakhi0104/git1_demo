@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Examination Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+    <div class="header-content">
+        <img src="https://avatars.githubusercontent.com/u/48626910?s=280&v=4" alt="College Logo" class="logo">
+
+        <div class="header-text">
+            <h1>Online Examination Portal</h1>
+            <p>ABES Engineering College</p>
+        </div>
+    </div>
+</header>
+
+    <div class="info-bar">
+        Important Notice: Read instructions carefully before starting the exam
+    </div>
+
+    <nav class="navbar">
+        <a href="#instructions">Instructions</a>
+        <a href="#exam">Exam</a>
+        <a href="#result">Result</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="instructions" class="card">
+            <h2>Exam Instructions</h2>
+            <ul class="instructions">
+                <li>Exam duration is 60 minutes.</li>
+                <li>All questions are compulsory.</li>
+                <li>No malpractice is allowed.</li>
+                <li>Result will be published after evaluation.</li>
+            </ul>
+        </section>
+
+        <section id="exam" class="card">
+            <h2>Student Exam Form</h2>
+
+            <form>
+                <label>Student Name</label>
+                <input type="text">
+
+                <label>Roll Number</label>
+                <input type="text">
+
+                <label>Subject</label>
+                <select>
+                    <option>Data Structures</option>
+                    <option>DBMS</option>
+                    <option>Operating Systems</option>
+                </select>
+
+                <button type="submit">Start Exam</button>
+            </form>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> examcell@abc.edu</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Office:</strong> Examination Cell, Block B</p>
+        </section>
+
+        <section id="result" class="result-box">
+            <h3>Result Summary</h3>
+            <p><strong>Name:</strong> Student Name</p>
+            <p><strong>Subject:</strong> Data Structures</p>
+            <p><strong>Marks:</strong> 78 / 100</p>
+            <p class="status">Status: PASS</p>
+
+            <a href="#exam" class="close-btn">Close</a>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 ABES Engineering College
+    </footer>
+
+</body>
+</html>
