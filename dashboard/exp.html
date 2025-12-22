@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Dashboard</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: #f2f7f7;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+
+  /* Header with soothing animated gradient */
+  header {
+    background: linear-gradient(-45deg, #66BB6A, #F0F8FF, #FFE5B4, #66BB6A);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #1B5E20;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  @keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #388E3C;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+  }
+
+  nav a:hover {
+    background: #F0F8FF;
+    color: #1B5E20;
+  }
+
+  /* Sections */
+  section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #264653;
+    text-align: center;
+  }
+
+  /* Course container */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Course card */
+  .course-card {
+    background: linear-gradient(135deg, #E8F5E9, #F0F8FF); /* green -> AliceBlue */
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+
+  .course-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1B5E20;
+  }
+
+  .instructor {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  .progress-bar {
+    background: #cce8e2;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+  }
+
+  .progress {
+    height: 100%;
+    width: 70%;
+    background: #66BB6A; /* green accent */
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+
+  /* Details boxes */
+  .details-box {
+    background: #dff6f0;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .details-box h3 {
+    color: #2a9d8f;
+    margin-bottom: 10px;
+  }
+
+  .details-box p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    background: #2E7D32;
+    color: white;
+  }
+
+  @media(max-width: 600px) {
+    .course-card {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  My Courses Dashboard
+</header>
+
+<nav>
+  <a href="#courses">Courses</a>
+  <a href="#details">Course Details</a>
+  <a href="#prerequisites">Pre-requisites</a>
+  <a href="#fees">Fees</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="courses">
+  <h2>Available Courses</h2>
+  <div class="container">
+    <a href="#details" class="course-card">
+      <div class="course-title">Data Structures</div>
+      <div class="instructor">Instructor: Prof. Sharma</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 80%;"></div>
+      </div>
+    </a>
+
+    <a href="#details" class="course-card">
+      <div class="course-title">Web Development</div>
+      <div class="instructor">Instructor: Ms. Kapoor</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 55%;"></div>
+      </div>
+    </a>
+
+    <a href="#details" class="course-card">
+      <div class="course-title">Machine Learning</div>
+      <div class="instructor">Instructor: Dr. Verma</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 40%;"></div>
+      </div>
+    </a>
+
+    <a href="#details" class="course-card">
+      <div class="course-title">Operating Systems</div>
+      <div class="instructor">Instructor: Prof. Rao</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%;"></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="details">
+  <h2>Course Details</h2>
+  <div class="details-box">
+    <h3>Data Structures</h3>
+    <p>Learn arrays, linked lists, stacks, queues, trees, graphs, and algorithms for efficient problem solving.</p>
+  </div>
+  <div class="details-box">
+    <h3>Web Development</h3>
+    <p>HTML, CSS, JavaScript, responsive design, and front-end frameworks to build modern websites.</p>
+  </div>
+  <div class="details-box">
+    <h3>Machine Learning</h3>
+    <p>Supervised and unsupervised learning, neural networks, regression, classification, and model evaluation.</p>
+  </div>
+  <div class="details-box">
+    <h3>Operating Systems</h3>
+    <p>Process management, memory management, file systems, concurrency, and OS design principles.</p>
+  </div>
+</section>
+
+<section id="prerequisites">
+  <h2>Pre-requisites</h2>
+  <div class="details-box">
+    <p>Basic programming knowledge, understanding of algorithms, and familiarity with command-line tools.</p>
+  </div>
+</section>
+
+<section id="fees">
+  <h2>Course Fees</h2>
+  <div class="details-box">
+    <p>Data Structures: ₹5,000</p>
+    <p>Web Development: ₹6,000</p>
+    <p>Machine Learning: ₹10,000</p>
+    <p>Operating Systems: ₹7,000</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="details-box">
+    <p>Email: info@mycollege.edu</p>
+    <p>Phone: +91-9876543210</p>
+    <p>Address: 123 College Road, City, Country</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 My College Dashboard
+</footer>
+
+</body>
+</html>
