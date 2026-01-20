@@ -55,7 +55,6 @@ body {
     color: #2dd4bf;   
 }
 
-/* ===== MAIN CONTAINER ===== */
 .container {
     max-width: 900px;
     margin: 30px auto;
@@ -77,7 +76,6 @@ body {
     }
 }
 
-/* ===== SECTIONS ===== */
 section {
     margin-bottom: 35px;
 }
