@@ -5,7 +5,6 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* ===== BACKGROUND WITH SUBTLE ANIMATION ===== */
 body {
     background: linear-gradient(135deg, #e6f4ff, #f0fdfa, #e6f4ff);
     background-size: 300% 300%;
